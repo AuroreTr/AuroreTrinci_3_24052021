@@ -1,0 +1,8 @@
+body {
+    @include text-font;
+    margin: 0 auto;
+}
+
+h1 {
+    @include title-font;
+}

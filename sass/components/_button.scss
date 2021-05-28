@@ -1,0 +1,10 @@
+button {
+    background: linear-gradient(to bottom right, $secondary-color, $primary-color);
+    width: max-content;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+}

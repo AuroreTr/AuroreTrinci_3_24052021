@@ -1,0 +1,14 @@
+/**********************************/
+/**********  FONTS CHART **********/
+
+@mixin title-font {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+@mixin text-font {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
