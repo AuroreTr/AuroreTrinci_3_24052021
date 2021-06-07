@@ -24,68 +24,72 @@
 
         <!-- Localisation input-->
         <div class="localisation">
-            <i class="fas fa-map-marker-alt localisation__icon"></i>
-            <input class="localisation__input" type="text" name="Localisation" placeholder="Paris, Belleville" size="12">
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="text" name="Localisation" placeholder="Paris, Belleville" size="12">
         </div>
 
         <!-- restaurants exploration -->
         <section class="exploration">
             <h1>Réservez le menu qui vous convient</h1>
-            <p class="exploration__p">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <a href="#restaurants-list"><button class="exploration__btn">Explorer nos restaurants</button></a>
         </section>
 
         <!-- booking process -->
         <section class="process">
             <h2>Fonctionnement</h2>
-            <div class="restaurant-choice">
-                <p class="rounded-nbr">1</p>
-                <i class="fas fa-mobile-alt"></i>
-                <p class="task">Choisissez un restaurant</p>
-            </div>
-            <div class="menu-choice">
-                <p class="rounded-nbr">2</p>
-                <i class="fas fa-list"></i>
-                <p class="task">Composez votre menu</p>
-            </div>
-            <div class="eating">
-                <p class="rounded-nbr">3</p>
-                <i class="fas fa-store"></i>
-                <p class="task">Dégustez au restaurant</p>
+            <div class="process-task">
+                <div class="task">
+                    <p class="rounded-nbr">1</p>
+                    <i class="fas fa-mobile-alt"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+                <div class="task">
+                    <p class="rounded-nbr">2</p>
+                    <i class="fas fa-list"></i>
+                    <p>Composez votre menu</p>
+                </div>
+                <div class="task">
+                    <p class="rounded-nbr">3</p>
+                    <i class="fas fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
             </div>
         </section>
 
         <!-- Restaurants list -->
-        <section id="restaurants-list" class="restaurants-list">
+        <section id="restaurant" class="restaurant">
             <h2>Restaurants</h2>
+            <div class="restaurant-list">
                 <div class="restaurant-card">
                     <img src="images/restaurants/la-palette-du-gout.jpg" alt="La palette du goût">
                     <h3>La palette du goût</h3>
-                    <p class="restaurant-city">Ménilmontant</p>
+                    <p>Ménilmontant</p>
                     <i class="far fa-heart"></i>
                 </div>
                 <div class="restaurant-card">
                     <img src="images/restaurants/la-note-enchantee.jpg" alt="La note enchantée">
                     <h3>La note enchantée</h3>
-                    <p class="restaurant-city">Charonne</p>
+                    <p>Charonne</p>
                     <i class="far fa-heart"></i>
                 </div>
                 <div class="restaurant-card">
                     <img src="images/restaurants/a-la-francaise.jpg" alt="A la française">
                     <h3>A la française</h3>
-                    <p class="restaurant-city">Cité Rouge</p>
+                    <p>Cité Rouge</p>
                     <i class="far fa-heart"></i>
                 </div>
                 <div class="restaurant-card">
                     <img src="images/restaurants/le-delice-des-sens.jpg" alt="Le délice des sens">
                     <h3>Le délice des sens</h3>
-                    <p class="restaurant-city">Folie-Méricourt</p>
+                    <p>Folie-Méricourt</p>
                     <i class="far fa-heart"></i>
                 </div>
+            </div>
         </section>
 
         <footer>
-            <img src="images/logo/ohmyfood.svg" alt="ohmyfood">
+            <h4 class="logo-footer">ohmyfood</h4>
             <ul>
                 <li class="bold"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
                 <li class="bold"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>

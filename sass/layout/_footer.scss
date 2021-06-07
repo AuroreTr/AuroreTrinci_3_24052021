@@ -1,0 +1,28 @@
+footer {
+    padding: 20px 0 20px 20px;
+    font-size: .9rem;
+    background-color: black;
+    color: white;
+    .logo-footer {
+        padding-bottom: 20px;
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: white;
+    }
+    ul {
+        li {
+            padding-bottom: 10px;
+        }
+        .bold {
+            font-weight: 600;
+            i {
+                width: 8px;
+                margin-right: 25px;
+            }
+        }
+        .regular {
+            font-weight: 400;
+        }
+    }
+}

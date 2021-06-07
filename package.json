@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css -w --style compressed"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,6 @@
   "bugs": {
     "url": "https://github.com/AuroreTr/AuroreTrinci_3_24052021/issues"
   },
-  "homepage": "https://github.com/AuroreTr/AuroreTrinci_3_24052021#readme"
+  "homepage": "https://github.com/AuroreTr/AuroreTrinci_3_24052021#readme",
+  "browserslist": "last 4 versions"
 }

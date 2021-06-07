@@ -6,4 +6,11 @@ $secondary-color: #ff79da;
 $tertiary-color: #99e2d0;
 $primary-background-color: #f6f6f6;
 
+$breakpoints: (
+    x-small: 480px,
+    small: 576px,
+    medium: 1040px,
+    large: 1536px
+);
+
 
