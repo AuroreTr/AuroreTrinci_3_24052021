@@ -1,0 +1,88 @@
+h1 {
+    margin-bottom: 20px;
+    padding: 30px 0 0 15px;
+    font-family: 'Shrikhand', sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.restaurant-image {
+    height: 28vh;
+    background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
+}
+
+.menu {
+    margin-top: -30px;
+    padding-bottom: 80px;
+    background-color: $primary-background-color;
+    border-radius: 35px 35px 0 0;
+    .restaurant-title {
+        position: relative;
+        i {
+            position: absolute;
+            right: 35px;
+            top: 35px;
+            font-size: 1.7rem;
+        }
+    }
+    .dish-type {
+        margin-bottom: 5px;
+        padding : 15px;
+        background: $primary-background-color;
+        h2 {
+            width: 40px;
+            padding-bottom: 3px;
+            font-size: 1rem;
+            font-weight: 400;
+            border-bottom: 3px solid $tertiary-color;
+        }
+        .dishes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .dish {
+            flex: 1;
+            position: relative;
+            min-width: 300px;
+            margin: 7px 10px;
+            padding: 10px;
+            border-radius: 15px;
+            background: #fff;
+            cursor: pointer;
+            @include x-small-only {
+                width: 320px;
+            }
+            h3, p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            h3 {
+                padding-right: 50px;
+                font-size: 1.2rem;
+                font-weight: 800;
+            }
+            p {
+                padding: 5px 50px 0 0;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            .price {
+                position: absolute;
+                right: 20px;
+                bottom: 10px;
+                font-size: 1rem;
+            }
+        }
+    }
+    .order-btn {
+        text-align: center;
+        margin-top: 20px;
+        button {
+            padding: 15px 50px;
+        }
+    }   
+}
+
+
