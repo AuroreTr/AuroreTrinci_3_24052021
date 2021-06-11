@@ -74,6 +74,41 @@ h1 {
                 bottom: 10px;
                 font-size: 1rem;
             }
+            .slide {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                top: 0;
+                right: 0;
+                width: 60px;
+                height: 100%;
+                background: $tertiary-color;
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+                &--check {
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    color: #fff;  
+                }
+            }
+            &:hover {
+                & .slide {
+                    transform: translateX(0);
+                    &--check {
+                        transform: rotate(0deg);
+                        overflow: hidden;
+                    }
+                }
+            }
+            .slide {
+                transform: translateX(10vh);
+                // transition: transform 500ms ease-in-out
+                &--check {
+                    transform: rotate(-360deg);
+                    transition: transform 400ms ease-out 100ms;                  
+                }
+            }
         }
     }
     .order-btn {

@@ -326,6 +326,38 @@ h1 {
   bottom: 10px;
   font-size: 1rem;
 }
+.menu .dish-type .dish .slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  background: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.menu .dish-type .dish .slide--check {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.menu .dish-type .dish:hover .slide {
+  transform: translateX(0);
+}
+.menu .dish-type .dish:hover .slide--check {
+  transform: rotate(0deg);
+  overflow: hidden;
+}
+.menu .dish-type .dish .slide {
+  transform: translateX(10vh);
+}
+.menu .dish-type .dish .slide--check {
+  transform: rotate(-360deg);
+  transition: transform 400ms ease-out 100ms;
+}
 .menu .order-btn {
   text-align: center;
   margin-top: 20px;
