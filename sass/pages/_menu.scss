@@ -11,6 +11,21 @@ h1 {
     background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
 }
 
+@keyframes apparition {
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@for $i from 1 through 14 {
+    .apparition-#{$i} {
+        opacity: 0;
+        transform: translateY(30px);    
+        animation: apparition .5s $i * 0.05s ease-out forwards;
+    }
+}
+
 .menu {
     margin-top: -30px;
     padding-bottom: 80px;
@@ -94,7 +109,7 @@ h1 {
             }
             &:hover {
                 & .slide {
-                    transform: translateX(0);
+                    // transform: translateX(0);
                     &--check {
                         transform: rotate(0deg);
                         overflow: hidden;
@@ -102,7 +117,7 @@ h1 {
                 }
             }
             .slide {
-                transform: translateX(10vh);
+                // transform: translateX(10vh);
                 // transition: transform 500ms ease-in-out
                 &--check {
                     transform: rotate(-360deg);
