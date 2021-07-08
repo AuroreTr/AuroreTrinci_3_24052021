@@ -96,6 +96,66 @@ footer ul .regular {
   font-weight: 400;
 }
 
+.loader {
+  animation: spin 3s 2 linear forwards;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #9356dc;
+  border-top-color: #9356dc;
+  box-sizing: border-box;
+  height: 20vmin;
+  left: calc(50% - 10vmin);
+  position: fixed;
+  top: calc(50% - 10vmin);
+  width: 20vmin;
+  z-index: 1;
+}
+.loader:before {
+  animation: spin 3s 2 linear forwards;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #ff79da;
+  border-top-color: #ff79da;
+  box-sizing: border-box;
+  content: "";
+  height: 16vmin;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 16vmin;
+}
+.loader:after {
+  animation: spin 3s 2 linear forwards;
+  border: solid 2vmin transparent;
+  border-radius: 50%;
+  border-right-color: #99e2d0;
+  border-top-color: #99e2d0;
+  box-sizing: border-box;
+  content: "";
+  height: 12vmin;
+  left: 2vmin;
+  position: absolute;
+  top: 2vmin;
+  width: 12vmin;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+header, .localisation, .exploration,
+.process, .restaurant, .footer {
+  animation: opacity-body 0.5s linear 6s forwards;
+  opacity: 10%;
+}
+
+@keyframes opacity-body {
+  100% {
+    opacity: 100%;
+  }
+}
 .localisation {
   display: flex;
   justify-content: center;
