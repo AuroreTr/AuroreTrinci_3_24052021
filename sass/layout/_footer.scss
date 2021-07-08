@@ -3,6 +3,9 @@ footer {
     font-size: .9rem;
     background-color: black;
     color: white;
+    @include medium {
+        text-align: center;
+    }
     .logo-footer {
         padding-bottom: 20px;
         font-family: 'Shrikhand', sans-serif;

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /**********************************/
 /**********  COLORS CHART **********/
 
@@ -18,3 +19,25 @@ $breakpoints: (
 );
 
 
+=======
+/**********************************/
+/**********  COLORS CHART **********/
+
+$primary-color: #9356dc;
+$light-primary-color: #ceb3f1;
+$secondary-color: #ff79da;
+$light-secondary-color: #ffcaf0;
+$tertiary-color: #99e2d0;
+$tertiary-color-opacity: rgba(153, 226, 208, 0);
+$primary-background-color: #f6f6f6;
+
+$breakpoints: (
+    x-small: 480px,
+    small: 576px,
+    medium: 992px,
+    large: 1200px,
+    extra-large: 1400px
+);
+
+
+>>>>>>> animations

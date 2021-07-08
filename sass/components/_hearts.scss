@@ -1,0 +1,27 @@
+
+.fa-heart {
+    // width: 10rem;
+    // height: 10rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    &:hover {
+        font-weight: bold;
+        background: -webkit-linear-gradient($light-secondary-color, $light-primary-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation : heart-gradient-animation .5s ease-out forwards;
+    }    
+}
+
+@keyframes heart-gradient-animation{
+    from {
+        background-position-y: 2rem;
+    }
+    to { 
+        background-position-y: 4rem;
+        background: -webkit-linear-gradient($secondary-color, $primary-color);
+        -webkit-background-clip: text;
+    }
+}

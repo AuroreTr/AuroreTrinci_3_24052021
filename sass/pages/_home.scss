@@ -6,6 +6,8 @@
     text-align: center;
     background-color: #e4e4e4;
     i {
+        bottom: 25px;
+        right: 25px;
         padding: 10px;
         font-size: 1.2rem;
     }
@@ -46,14 +48,20 @@
             align-items: center;
             flex: 1 1 0;
             position: relative;
-            min-width: max-content;
-            margin: 10px 10px 10px 30px;
+            min-width: 300px;
+            max-width: 400px;
+            margin: 10px 35px 10px 45px;
             padding: 30px 80px 30px 20px;
+            transition: background-color .2s ease-in-out;
             background-color: $primary-background-color;
             border-radius: 20px;
             box-shadow: 0 8px 8px #e4e4e4;
+            cursor: pointer;
             @include x-small-only {
                 min-width: 330px;
+            }
+            &:hover {
+                background-color: rgba(146, 86, 220, 0.1);
             }
             i {
                 padding: 0 20px;
@@ -71,12 +79,14 @@
                 color: white;
                 background-color: $primary-color;
                 border-radius: 50%;
+
             }
         }
     }
 }
 
 .restaurant {
+    min-width: 300px;
     margin-top: 60px;
     margin-bottom: 50px;
     background-color: $primary-background-color;
@@ -89,8 +99,12 @@
         justify-content: center;
 
         .restaurant-card {
+            flex: 1;
             position: relative;
             margin: 15px;
+            min-width: 300px;
+            max-width: 400px;
+            height: 250px;;
             background-color: white;
             box-shadow: 0 8px 8px #e4e4e4;
             border-radius: 15px;
@@ -103,25 +117,39 @@
             @include medium-only {
                 margin: 15px;
             }
-            img {
-                object-fit: cover;
-                width: 100%;
-                max-width: 350px;
-                max-height: 200px;              
+            .background-img {
+                display: flex;
+                justify-content: flex-end;
+                height: 180px;
                 border-radius: 15px 15px 0 0;
-                @include x-small-only {
-                    width: 300px;
-                    height: 170px;
+                .new {
+                    width: 80px;
+                    height: 28px;
+                    margin-top: 10px;
+                    margin-right: 10px;
+                    padding: 6px 12px;
+                    border-radius: 1px;
+                    text-align: center;
+                    font-size: .8rem;
+                    font-weight: 600;
+                    color: #2f8b76;
+                    background:$tertiary-color ;
                 }
-                @include large-only {
-                    max-width: 420px;
-                    max-height: 220px;
-                }
-                @include medium-only {
-                    max-width: 350px;
-                    max-height: 200px;
-                }
+
             }
+            .la-palette-du-gout-img {
+                background: url('../../images/restaurants/la-palette-du-gout.jpg') center center/cover;
+            }
+            .la-note-enchantee-img {
+                background: url('../../images/restaurants/la-note-enchantee.jpg') center center/cover;
+            }
+            .a-la-francaise-img {
+                background: url('../../images/restaurants/a-la-francaise.jpg') center center/cover;
+            }
+            .le-delice-des-sens-img {
+                background: url('../../images/restaurants/le-delice-des-sens.jpg') center center/cover;
+            }
+
             h3 {
                 padding: 10px 0 5px 15px;
             }
@@ -134,8 +162,25 @@
                 position: absolute;
                 right: 25px;
                 bottom: 25px;
-                font-size: 1.7rem;
             }
         }
     }
 }
+
+// @keyframes heart-apparition {
+//     0% {
+//         opacity: 0;
+//     }
+//     100% {
+//         opacity: 1;
+//     }
+// }
+
+// @keyframes heart-disparition {
+//     0% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//     }
+// }
