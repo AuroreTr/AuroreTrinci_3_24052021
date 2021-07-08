@@ -1,0 +1,687 @@
+/**********************************/
+/**********  COLORS CHART **********/
+/**********************************/
+/**********  FONTS CHART **********/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.logo {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  -webkit-box-shadow: 0 5px 3px #cecece;
+          box-shadow: 0 5px 3px #cecece;
+}
+
+.logo img {
+  width: 230px;
+  height: 60px;
+  margin: 0;
+  padding: .5rem;
+}
+
+footer {
+  padding: 20px 0 20px 20px;
+  font-size: .9rem;
+  background-color: black;
+  color: white;
+}
+
+footer .logo-footer {
+  padding-bottom: 20px;
+  font-family: 'Shrikhand', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+
+footer ul li {
+  padding-bottom: 10px;
+}
+
+footer ul .bold {
+  font-weight: 600;
+}
+
+footer ul .bold i {
+  width: 8px;
+  margin-right: 25px;
+}
+
+footer ul .regular {
+  font-weight: 400;
+}
+
+.localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0 0 0;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+
+.localisation i {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.localisation input {
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #e4e4e4;
+}
+
+.localisation input::-webkit-input-placeholder {
+  color: black;
+}
+
+.localisation input:-ms-input-placeholder {
+  color: black;
+}
+
+.localisation input::-ms-input-placeholder {
+  color: black;
+}
+
+.localisation input::placeholder {
+  color: black;
+}
+
+.exploration {
+  padding: 40px 2rem 50px;
+  text-align: center;
+  margin: 0 0 50px 0;
+  background-color: #f6f6f6;
+}
+
+.exploration p {
+  margin: 20px 0 30px 0;
+  font-weight: 300;
+}
+
+.process h2 {
+  padding-left: 10px;
+}
+
+.process .process-task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.process .process-task .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  position: relative;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px 35px 10px 45px;
+  padding: 30px 80px 30px 20px;
+  -webkit-transition: background-color .2s ease-in-out;
+  transition: background-color .2s ease-in-out;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 8px 8px #e4e4e4;
+          box-shadow: 0 8px 8px #e4e4e4;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .process .process-task .task {
+    min-width: 330px;
+  }
+}
+
+.process .process-task .task:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
+
+.process .process-task .task i {
+  padding: 0 20px;
+}
+
+.process .process-task .task .rounded-nbr {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -15px;
+  width: 25px;
+  height: 25px;
+  font-size: .8rem;
+  font-weight: 400;
+  color: white;
+  background-color: #9356dc;
+  border-radius: 50%;
+}
+
+.restaurant {
+  min-width: 300px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  background-color: #f6f6f6;
+}
+
+.restaurant h2 {
+  padding: 50px 10px 0 10px;
+}
+
+.restaurant .restaurant-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.restaurant .restaurant-list .restaurant-card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  margin: 15px;
+  min-width: 300px;
+  max-width: 400px;
+  height: 250px;
+  background-color: white;
+  -webkit-box-shadow: 0 8px 8px #e4e4e4;
+          box-shadow: 0 8px 8px #e4e4e4;
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .restaurant .restaurant-list .restaurant-card {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 1536px) {
+  .restaurant .restaurant-list .restaurant-card {
+    margin: 45px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .restaurant .restaurant-list .restaurant-card {
+    margin: 15px;
+  }
+}
+
+.restaurant .restaurant-list .restaurant-card .background-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+}
+
+.restaurant .restaurant-list .restaurant-card .background-img .new {
+  width: 80px;
+  height: 28px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #2f8b76;
+  background: #99e2d0;
+}
+
+.restaurant .restaurant-list .restaurant-card .la-palette-du-gout-img {
+  background: url("../../images/restaurants/la-palette-du-gout.jpg") center center/cover;
+}
+
+.restaurant .restaurant-list .restaurant-card .la-note-enchantee-img {
+  background: url("../../images/restaurants/la-note-enchantee.jpg") center center/cover;
+}
+
+.restaurant .restaurant-list .restaurant-card .a-la-francaise-img {
+  background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
+}
+
+.restaurant .restaurant-list .restaurant-card .le-delice-des-sens-img {
+  background: url("../../images/restaurants/le-delice-des-sens.jpg") center center/cover;
+}
+
+.restaurant .restaurant-list .restaurant-card h3 {
+  padding: 10px 0 5px 15px;
+}
+
+.restaurant .restaurant-list .restaurant-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 0 15px 15px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding: 30px 0 0 15px;
+  font-family: 'Shrikhand', sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+.restaurant-image {
+  height: 28vh;
+  background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
+}
+
+@-webkit-keyframes apparition {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.apparition-1 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.08s ease-out forwards;
+          animation: apparition 0.5s 0.08s ease-out forwards;
+}
+
+.apparition-2 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.16s ease-out forwards;
+          animation: apparition 0.5s 0.16s ease-out forwards;
+}
+
+.apparition-3 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.24s ease-out forwards;
+          animation: apparition 0.5s 0.24s ease-out forwards;
+}
+
+.apparition-4 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.32s ease-out forwards;
+          animation: apparition 0.5s 0.32s ease-out forwards;
+}
+
+.apparition-5 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.4s ease-out forwards;
+          animation: apparition 0.5s 0.4s ease-out forwards;
+}
+
+.apparition-6 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.48s ease-out forwards;
+          animation: apparition 0.5s 0.48s ease-out forwards;
+}
+
+.apparition-7 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.56s ease-out forwards;
+          animation: apparition 0.5s 0.56s ease-out forwards;
+}
+
+.apparition-8 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.64s ease-out forwards;
+          animation: apparition 0.5s 0.64s ease-out forwards;
+}
+
+.apparition-9 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.72s ease-out forwards;
+          animation: apparition 0.5s 0.72s ease-out forwards;
+}
+
+.apparition-10 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.8s ease-out forwards;
+          animation: apparition 0.5s 0.8s ease-out forwards;
+}
+
+.apparition-11 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.88s ease-out forwards;
+          animation: apparition 0.5s 0.88s ease-out forwards;
+}
+
+.apparition-12 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 0.96s ease-out forwards;
+          animation: apparition 0.5s 0.96s ease-out forwards;
+}
+
+.apparition-13 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 1.04s ease-out forwards;
+          animation: apparition 0.5s 1.04s ease-out forwards;
+}
+
+.apparition-14 {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-animation: apparition 0.5s 1.12s ease-out forwards;
+          animation: apparition 0.5s 1.12s ease-out forwards;
+}
+
+.menu {
+  margin-top: -30px;
+  padding-bottom: 80px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+}
+
+.menu i {
+  font-size: 1.7rem;
+}
+
+.menu .dish-type {
+  margin-bottom: 5px;
+  padding: 15px;
+  background: #f6f6f6;
+}
+
+.menu .dish-type h2 {
+  width: 40px;
+  padding-bottom: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.menu .dish-type .dishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu .dish-type .dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 350px;
+  margin: 7px 10px;
+  border-radius: 15px;
+  background: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 7px 0px #dddddd;
+          box-shadow: 0 0 7px 0px #dddddd;
+}
+
+@media screen and (max-width: 480px) {
+  .menu .dish-type .dish {
+    width: 320px;
+  }
+}
+
+.menu .dish-type .dish > div {
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  padding: 3%;
+  width: calc(100% - 3rem);
+  display: block;
+}
+
+.menu .dish-type .dish h3, .menu .dish-type .dish p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .dish-type .dish h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.menu .dish-type .dish p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.menu .dish-type .dish span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  width: 3rem;
+}
+
+.menu .dish-type .dish .slide {
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 0;
+  height: 100%;
+  background: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.menu .dish-type .dish .slide::before {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.menu .dish-type .dish:hover > div {
+  width: calc(100% - 6rem);
+}
+
+.menu .dish-type .dish:hover .slide {
+  width: 3rem;
+}
+
+.menu .dish-type .dish:hover .slide::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu .order-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.menu .order-btn button {
+  padding: 15px 50px;
+}
+
+button {
+  background: -webkit-gradient(linear, left top, right bottom, from(#ff79da), to(#9356dc));
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 5px #cacaca;
+          box-shadow: 0 5px 5px #cacaca;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.fa-heart {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.fa-heart {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+}
+
+.fa-heart:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ffcaf0, #ceb3f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: heart-gradient-animation .5s ease-out forwards;
+          animation: heart-gradient-animation .5s ease-out forwards;
+}
+
+@-webkit-keyframes heart-gradient-animation {
+  from {
+    background-position-y: 2rem;
+  }
+  to {
+    background-position-y: 4rem;
+    background: -webkit-linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+  }
+}
+
+@keyframes heart-gradient-animation {
+  from {
+    background-position-y: 2rem;
+  }
+  to {
+    background-position-y: 4rem;
+    background: -webkit-linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+  }
+}
+/*# sourceMappingURL=main.css.map */

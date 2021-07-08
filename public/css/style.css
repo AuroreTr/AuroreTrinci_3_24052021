@@ -10,7 +10,7 @@
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #1c1c1c;
   cursor: pointer;
 }
 
@@ -41,12 +41,23 @@ h3 {
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   text-align: center;
   box-shadow: 0 5px 3px #cecece;
 }
+.logo a {
+  flex: 1;
+}
+.logo a i {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
 .logo img {
+  flex: 10;
   width: 230px;
   height: 60px;
   margin: 0;
@@ -58,6 +69,11 @@ footer {
   font-size: 0.9rem;
   background-color: black;
   color: white;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    text-align: center;
+  }
 }
 footer .logo-footer {
   padding-bottom: 20px;
@@ -89,6 +105,8 @@ footer ul .regular {
   background-color: #e4e4e4;
 }
 .localisation i {
+  bottom: 25px;
+  right: 25px;
   padding: 10px;
   font-size: 1.2rem;
 }
@@ -132,14 +150,19 @@ footer ul .regular {
   max-width: 400px;
   margin: 10px 35px 10px 45px;
   padding: 30px 80px 30px 20px;
+  transition: background-color 0.2s ease-in-out;
   background-color: #f6f6f6;
   border-radius: 20px;
   box-shadow: 0 8px 8px #e4e4e4;
+  cursor: pointer;
 }
 @media screen and (max-width: 480px) {
   .process .process-task .task {
     min-width: 330px;
   }
+}
+.process .process-task .task:hover {
+  background-color: rgba(146, 86, 220, 0.1);
 }
 .process .process-task .task i {
   padding: 0 20px;
@@ -189,12 +212,12 @@ footer ul .regular {
     margin: 15px;
   }
 }
-@media screen and (max-width: 1536px) {
+@media screen and (max-width: 1200px) {
   .restaurant .restaurant-list .restaurant-card {
     margin: 45px;
   }
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 992px) {
   .restaurant .restaurant-list .restaurant-card {
     margin: 15px;
   }
@@ -242,7 +265,6 @@ footer ul .regular {
   position: absolute;
   right: 25px;
   bottom: 25px;
-  font-size: 1.7rem;
 }
 
 h1 {
@@ -251,11 +273,6 @@ h1 {
   font-family: "Shrikhand", sans-serif;
   font-weight: 500;
   font-size: 1.7rem;
-}
-
-.restaurant-image {
-  height: 28vh;
-  background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
 }
 
 @keyframes apparition {
@@ -267,187 +284,209 @@ h1 {
 .apparition-1 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.05s ease-out forwards;
+  animation: apparition 0.5s 0.08s ease-out forwards;
 }
 
 .apparition-2 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.1s ease-out forwards;
+  animation: apparition 0.5s 0.16s ease-out forwards;
 }
 
 .apparition-3 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.15s ease-out forwards;
+  animation: apparition 0.5s 0.24s ease-out forwards;
 }
 
 .apparition-4 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.2s ease-out forwards;
+  animation: apparition 0.5s 0.32s ease-out forwards;
 }
 
 .apparition-5 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.25s ease-out forwards;
+  animation: apparition 0.5s 0.4s ease-out forwards;
 }
 
 .apparition-6 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.3s ease-out forwards;
+  animation: apparition 0.5s 0.48s ease-out forwards;
 }
 
 .apparition-7 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.35s ease-out forwards;
+  animation: apparition 0.5s 0.56s ease-out forwards;
 }
 
 .apparition-8 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.4s ease-out forwards;
+  animation: apparition 0.5s 0.64s ease-out forwards;
 }
 
 .apparition-9 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.45s ease-out forwards;
+  animation: apparition 0.5s 0.72s ease-out forwards;
 }
 
 .apparition-10 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.5s ease-out forwards;
+  animation: apparition 0.5s 0.8s ease-out forwards;
 }
 
 .apparition-11 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.55s ease-out forwards;
+  animation: apparition 0.5s 0.88s ease-out forwards;
 }
 
 .apparition-12 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.6s ease-out forwards;
+  animation: apparition 0.5s 0.96s ease-out forwards;
 }
 
 .apparition-13 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.65s ease-out forwards;
+  animation: apparition 0.5s 1.04s ease-out forwards;
 }
 
 .apparition-14 {
   opacity: 0;
   transform: translateY(30px);
-  animation: apparition 0.5s 0.7s ease-out forwards;
+  animation: apparition 0.5s 1.12s ease-out forwards;
 }
 
-.menu {
-  margin-top: -30px;
+.container {
+  position: relative;
+  margin: -30px auto 60px auto;
   padding-bottom: 80px;
   background-color: #f6f6f6;
   border-radius: 35px 35px 0 0;
 }
-.menu .restaurant-title {
-  position: relative;
+@media screen and (min-width: 992px) {
+  .container {
+    width: 90%;
+    border-radius: 35px;
+    box-shadow: 10px 10px 12px 10px #aaaaaa;
+  }
 }
-.menu .restaurant-title i {
-  position: absolute;
-  right: 35px;
-  top: 35px;
-  font-size: 1.7rem;
+.container i {
+  font-size: 1.8rem;
+  top: 25px;
+  right: 50px;
 }
-.menu .dish-type {
+.container .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
+}
+@media screen and (min-width: 1400px) {
+  .container .menu {
+    flex-wrap: nowrap;
+  }
+}
+.container .menu .dish-type {
   margin-bottom: 5px;
   padding: 15px;
   background: #f6f6f6;
 }
-.menu .dish-type h2 {
+.container .menu .dish-type h2 {
   width: 40px;
   padding-bottom: 3px;
   font-size: 1rem;
   font-weight: 400;
   border-bottom: 3px solid #99e2d0;
 }
-.menu .dish-type .dishes {
+.container .menu .dish-type .dishes {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-.menu .dish-type .dish {
-  flex: 1;
-  position: relative;
-  min-width: 300px;
+.container .menu .dish-type .dish {
+  display: flex;
+  width: 350px;
   margin: 7px 10px;
-  padding: 10px;
   border-radius: 15px;
   background: #fff;
   cursor: pointer;
+  box-shadow: 0 0 7px 0px #dddddd;
 }
 @media screen and (max-width: 480px) {
-  .menu .dish-type .dish {
+  .container .menu .dish-type .dish {
     width: 320px;
   }
 }
-.menu .dish-type .dish h3, .menu .dish-type .dish p {
+.container .menu .dish-type .dish > div {
+  transition: width 0.5s;
+  padding: 3%;
+  width: calc(100% - 3rem);
+  display: block;
+}
+.container .menu .dish-type .dish h3, .container .menu .dish-type .dish p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu .dish-type .dish h3 {
-  padding-right: 50px;
+.container .menu .dish-type .dish h3 {
   font-size: 1.2rem;
   font-weight: 800;
 }
-.menu .dish-type .dish p {
-  padding: 5px 50px 0 0;
+.container .menu .dish-type .dish p {
   font-size: 1rem;
   font-weight: 400;
 }
-.menu .dish-type .dish .price {
-  position: absolute;
-  right: 20px;
-  bottom: 10px;
-  font-size: 1rem;
-}
-.menu .dish-type .dish .slide {
-  position: absolute;
+.container .menu .dish-type .dish span {
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0;
-  right: 0;
-  width: 60px;
+  font-size: 1rem;
+  width: 3rem;
+}
+.container .menu .dish-type .dish .slide {
+  transition: width 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
   height: 100%;
   background: #99e2d0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-}
-.menu .dish-type .dish .slide--check {
-  display: inline-block;
+  overflow: hidden;
   font-size: 1.5rem;
   color: #fff;
 }
-.menu .dish-type .dish:hover .slide--check {
-  transform: rotate(0deg);
-  overflow: hidden;
-}
-.menu .dish-type .dish .slide--check {
+.container .menu .dish-type .dish .slide::before {
+  transition: transform 0.5s;
   transform: rotate(-360deg);
-  transition: transform 400ms ease-out 100ms;
 }
-.menu .order-btn {
-  text-align: center;
-  margin-top: 20px;
+.container .menu .dish-type .dish:hover > div {
+  width: calc(100% - 6rem);
 }
-.menu .order-btn button {
-  padding: 15px 50px;
+.container .menu .dish-type .dish:hover .slide {
+  width: 3rem;
+}
+.container .menu .dish-type .dish:hover .slide::before {
+  transform: rotate(0deg);
+}
+.container .order-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container .order-btn .apparition-14 {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 button {
@@ -465,6 +504,69 @@ button {
 
 img {
   width: 100%;
+}
+
+.card {
+  text-decoration: none;
+  color: #000;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.fa-heart {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.fa-heart:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ffcaf0, #ceb3f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heart-gradient-animation 0.5s ease-out forwards;
+}
+
+@keyframes heart-gradient-animation {
+  from {
+    background-position-y: 2rem;
+  }
+  to {
+    background-position-y: 4rem;
+    background: -webkit-linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+  }
+}
+.restaurant-image {
+  height: 28vh;
+}
+
+.img-a-la-francaise {
+  background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
+}
+
+.img-la-note-enchantee {
+  background: url("../../images/restaurants/la-note-enchantee.jpg") center center/cover;
+}
+
+.img-la-palette-du-gout {
+  background: url("../../images/restaurants/la-palette-du-gout.jpg") center center/cover;
+}
+
+.img-le-delice-des-sens {
+  background: url("../../images/restaurants/le-delice-des-sens.jpg") center center/cover;
 }
 
 /*# sourceMappingURL=style.css.map */

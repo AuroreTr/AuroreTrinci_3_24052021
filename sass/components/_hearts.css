@@ -1,0 +1,45 @@
+i {
+  font-size: 5rem;
+}
+
+i:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ffa5a5, #0a2be2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: test 1s forwards;
+          animation: test 1s forwards;
+}
+
+i {
+  width: 10rem;
+  height: 10rem;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes test {
+  from {
+    background-position-y: 3rem;
+  }
+  to {
+    background-position-y: 7rem;
+  }
+}
+
+@keyframes test {
+  from {
+    background-position-y: 3rem;
+  }
+  to {
+    background-position-y: 7rem;
+  }
+}
+/*# sourceMappingURL=hearts.css.map */
