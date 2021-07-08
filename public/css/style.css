@@ -1,18 +1,572 @@
-/* Error: expected "{".
- *   ,
- * 5 | $primary-color: #9356dc;
- *   |                        ^
- *   '
- *   sass\utils\_variables.scss 5:24  @import
- *   sass\main.scss 1:9               root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected "{".\a   \2577 \a 5 \2502  $primary-color: #9356dc;\a   \2502                         ^\a   \2575 \a   sass\\utils\\_variables.scss 5:24  @import\a   sass\\main.scss 1:9               root stylesheet';
+/**********************************/
+/**********  COLORS CHART **********/
+/**********************************/
+/**********  FONTS CHART **********/
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+a {
+  text-decoration: none;
+  color: #1c1c1c;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+  box-shadow: 0 5px 3px #cecece;
+}
+.logo a {
+  flex: 1;
+}
+.logo a i {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+.logo img {
+  flex: 10;
+  width: 230px;
+  height: 60px;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+footer {
+  padding: 20px 0 20px 20px;
+  font-size: 0.9rem;
+  background-color: black;
+  color: white;
+}
+@media screen and (min-width: 992px) {
+  footer {
+    text-align: center;
+  }
+}
+footer .logo-footer {
+  padding-bottom: 20px;
+  font-family: "Shrikhand", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: white;
+}
+footer ul li {
+  padding-bottom: 10px;
+}
+footer ul .bold {
+  font-weight: 600;
+}
+footer ul .bold i {
+  width: 8px;
+  margin-right: 25px;
+}
+footer ul .regular {
+  font-weight: 400;
+}
+
+.localisation {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 0 0;
+  padding: 5px 10px;
+  text-align: center;
+  background-color: #e4e4e4;
+}
+.localisation i {
+  bottom: 25px;
+  right: 25px;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.localisation input {
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #e4e4e4;
+}
+.localisation input::placeholder {
+  color: black;
+}
+
+.exploration {
+  padding: 40px 2rem 50px;
+  text-align: center;
+  margin: 0 0 50px 0;
+  background-color: #f6f6f6;
+}
+.exploration p {
+  margin: 20px 0 30px 0;
+  font-weight: 300;
+}
+
+.process h2 {
+  padding-left: 10px;
+}
+.process .process-task {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.process .process-task .task {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1 1 0;
+  position: relative;
+  min-width: 300px;
+  max-width: 400px;
+  margin: 10px 35px 10px 45px;
+  padding: 30px 80px 30px 20px;
+  transition: background-color 0.2s ease-in-out;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0 8px 8px #e4e4e4;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .process .process-task .task {
+    min-width: 330px;
+  }
+}
+.process .process-task .task:hover {
+  background-color: rgba(146, 86, 220, 0.1);
+}
+.process .process-task .task i {
+  padding: 0 20px;
+}
+.process .process-task .task .rounded-nbr {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: -15px;
+  width: 25px;
+  height: 25px;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: white;
+  background-color: #9356dc;
+  border-radius: 50%;
+}
+
+.restaurant {
+  min-width: 300px;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  background-color: #f6f6f6;
+}
+.restaurant h2 {
+  padding: 50px 10px 0 10px;
+}
+.restaurant .restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.restaurant .restaurant-list .restaurant-card {
+  flex: 1;
+  position: relative;
+  margin: 15px;
+  min-width: 300px;
+  max-width: 400px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 0 8px 8px #e4e4e4;
+  border-radius: 15px;
+}
+@media screen and (max-width: 480px) {
+  .restaurant .restaurant-list .restaurant-card {
+    margin: 15px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .restaurant .restaurant-list .restaurant-card {
+    margin: 45px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .restaurant .restaurant-list .restaurant-card {
+    margin: 15px;
+  }
+}
+.restaurant .restaurant-list .restaurant-card .background-img {
+  display: flex;
+  justify-content: flex-end;
+  height: 180px;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant .restaurant-list .restaurant-card .background-img .new {
+  width: 80px;
+  height: 28px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 6px 12px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #2f8b76;
+  background: #99e2d0;
+}
+.restaurant .restaurant-list .restaurant-card .la-palette-du-gout-img {
+  background: url("../../images/restaurants/la-palette-du-gout.jpg") center center/cover;
+}
+.restaurant .restaurant-list .restaurant-card .la-note-enchantee-img {
+  background: url("../../images/restaurants/la-note-enchantee.jpg") center center/cover;
+}
+.restaurant .restaurant-list .restaurant-card .a-la-francaise-img {
+  background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
+}
+.restaurant .restaurant-list .restaurant-card .le-delice-des-sens-img {
+  background: url("../../images/restaurants/le-delice-des-sens.jpg") center center/cover;
+}
+.restaurant .restaurant-list .restaurant-card h3 {
+  padding: 10px 0 5px 15px;
+}
+.restaurant .restaurant-list .restaurant-card p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 0 15px 15px;
+}
+.restaurant .restaurant-list .restaurant-card i {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  padding: 30px 0 0 15px;
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.apparition-1 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.08s ease-out forwards;
+}
+
+.apparition-2 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.16s ease-out forwards;
+}
+
+.apparition-3 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.24s ease-out forwards;
+}
+
+.apparition-4 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.32s ease-out forwards;
+}
+
+.apparition-5 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.4s ease-out forwards;
+}
+
+.apparition-6 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.48s ease-out forwards;
+}
+
+.apparition-7 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.56s ease-out forwards;
+}
+
+.apparition-8 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.64s ease-out forwards;
+}
+
+.apparition-9 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.72s ease-out forwards;
+}
+
+.apparition-10 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.8s ease-out forwards;
+}
+
+.apparition-11 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.88s ease-out forwards;
+}
+
+.apparition-12 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 0.96s ease-out forwards;
+}
+
+.apparition-13 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 1.04s ease-out forwards;
+}
+
+.apparition-14 {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: apparition 0.5s 1.12s ease-out forwards;
+}
+
+.container {
+  position: relative;
+  margin: -30px auto 60px auto;
+  padding-bottom: 80px;
+  background-color: #f6f6f6;
+  border-radius: 35px 35px 0 0;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    width: 90%;
+    border-radius: 35px;
+    box-shadow: 10px 10px 12px 10px #aaaaaa;
+  }
+}
+.container i {
+  font-size: 1.8rem;
+  top: 25px;
+  right: 50px;
+}
+.container .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: 0;
+}
+@media screen and (min-width: 1400px) {
+  .container .menu {
+    flex-wrap: nowrap;
+  }
+}
+.container .menu .dish-type {
+  margin-bottom: 5px;
+  padding: 15px;
+  background: #f6f6f6;
+}
+.container .menu .dish-type h2 {
+  width: 40px;
+  padding-bottom: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+  border-bottom: 3px solid #99e2d0;
+}
+.container .menu .dish-type .dishes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .menu .dish-type .dish {
+  display: flex;
+  width: 350px;
+  margin: 7px 10px;
+  border-radius: 15px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 7px 0px #dddddd;
+}
+@media screen and (max-width: 480px) {
+  .container .menu .dish-type .dish {
+    width: 320px;
+  }
+}
+.container .menu .dish-type .dish > div {
+  transition: width 0.5s;
+  padding: 3%;
+  width: calc(100% - 3rem);
+  display: block;
+}
+.container .menu .dish-type .dish h3, .container .menu .dish-type .dish p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.container .menu .dish-type .dish h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.container .menu .dish-type .dish p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.container .menu .dish-type .dish span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 3rem;
+}
+.container .menu .dish-type .dish .slide {
+  transition: width 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0;
+  height: 100%;
+  background: #99e2d0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  overflow: hidden;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.container .menu .dish-type .dish .slide::before {
+  transition: transform 0.5s;
+  transform: rotate(-360deg);
+}
+.container .menu .dish-type .dish:hover > div {
+  width: calc(100% - 6rem);
+}
+.container .menu .dish-type .dish:hover .slide {
+  width: 3rem;
+}
+.container .menu .dish-type .dish:hover .slide::before {
+  transform: rotate(0deg);
+}
+.container .order-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.container .order-btn .apparition-14 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+button {
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  width: max-content;
+  padding: 15px 20px;
+  font-size: 0.9rem;
+  color: white;
+  font-weight: 500;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 5px 5px #cacaca;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.card {
+  text-decoration: none;
+  color: #000;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.fa-heart {
+  position: absolute;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.fa-heart {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.fa-heart:hover {
+  font-weight: bold;
+  background: -webkit-linear-gradient(#ffcaf0, #ceb3f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heart-gradient-animation 0.5s ease-out forwards;
+}
+
+@keyframes heart-gradient-animation {
+  from {
+    background-position-y: 2rem;
+  }
+  to {
+    background-position-y: 4rem;
+    background: -webkit-linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+  }
+}
+.restaurant-image {
+  height: 28vh;
+}
+
+.img-a-la-francaise {
+  background: url("../../images/restaurants/a-la-francaise.jpg") center center/cover;
+}
+
+.img-la-note-enchantee {
+  background: url("../../images/restaurants/la-note-enchantee.jpg") center center/cover;
+}
+
+.img-la-palette-du-gout {
+  background: url("../../images/restaurants/la-palette-du-gout.jpg") center center/cover;
+}
+
+.img-le-delice-des-sens {
+  background: url("../../images/restaurants/le-delice-des-sens.jpg") center center/cover;
+}
+
+/*# sourceMappingURL=style.css.map */
