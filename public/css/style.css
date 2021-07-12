@@ -324,7 +324,7 @@ header, .localisation, .exploration,
 .restaurant .restaurant-list .restaurant-card i {
   position: absolute;
   right: 25px;
-  bottom: 25px;
+  bottom: 15px;
 }
 
 h1 {
@@ -590,23 +590,23 @@ img {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  height: 40px;
 }
 .fa-heart:hover {
   font-weight: bold;
-  background: -webkit-linear-gradient(#ffcaf0, #ceb3f1);
+  background: -webkit-linear-gradient(white, #ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: heart-gradient-animation 0.5s ease-out forwards;
+  background-size: 100% 300%;
 }
 
 @keyframes heart-gradient-animation {
   from {
-    background-position-y: 2rem;
+    background-position-y: 0.3rem;
   }
   to {
-    background-position-y: 4rem;
-    background: -webkit-linear-gradient(#ff79da, #9356dc);
-    -webkit-background-clip: text;
+    background-position-y: -4.7rem;
   }
 }
 .restaurant-image {

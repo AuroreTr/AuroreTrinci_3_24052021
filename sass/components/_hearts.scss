@@ -6,22 +6,23 @@
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+    height: 40px;
     &:hover {
         font-weight: bold;
-        background: -webkit-linear-gradient($light-secondary-color, $light-primary-color);
+        background: -webkit-linear-gradient(white, $secondary-color, $primary-color);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         animation : heart-gradient-animation .5s ease-out forwards;
+        background-size: 100% 300%;
     }    
 }
 
 @keyframes heart-gradient-animation{
     from {
-        background-position-y: 2rem;
+        background-position-y: .3rem;
     }
     to { 
-        background-position-y: 4rem;
-        background: -webkit-linear-gradient($secondary-color, $primary-color);
-        -webkit-background-clip: text;
+        background-position-y: -4.7rem;
+
     }
 }
