@@ -48,7 +48,7 @@
     }
   }
 
-  header, .localisation, .exploration, 
+  .header, .localisation, .exploration, 
   .process, .restaurant, .footer {
     animation: opacity-body .5s linear 6s forwards;
     opacity: 10%;
@@ -124,9 +124,13 @@
             }
             &:hover {
                 background-color: rgba(146, 86, 220, 0.1);
+                i {
+                    color: $primary-color;
+                }
             }
             i {
                 padding: 0 20px;
+                transition: color .2s ease-in-out;
             }
             .rounded-nbr {
                 position: absolute;
@@ -229,20 +233,3 @@
     }
 }
 
-// @keyframes heart-apparition {
-//     0% {
-//         opacity: 0;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// }
-
-// @keyframes heart-disparition {
-//     0% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//     }
-// }

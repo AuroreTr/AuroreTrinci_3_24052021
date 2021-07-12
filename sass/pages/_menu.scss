@@ -23,7 +23,7 @@ h1 {
 
 .container {
     position: relative;
-    margin: -30px auto 60px auto;
+    margin: -30px auto 0 auto;
     padding-bottom: 80px;
     background-color: $primary-background-color;
     border-radius: 35px 35px 0 0;
@@ -75,7 +75,7 @@ h1 {
                 & > div{
                     @include transitionDish();
                     padding: 3%;
-                    width: calc(100% - 3rem);
+                    width: calc(100% - 3.8rem);
                     display: block;
                 }
                 h3, p {
@@ -96,9 +96,10 @@ h1 {
                 span {
                     display: flex;
                     justify-content: center;
-                    align-items: center;
+                    align-items: flex-end;
                     font-size: 1rem;
-                    width: 3rem;
+                    width: 3.8rem;
+                    padding: 3%;
                 }
                 .slide {
                     @include transitionDish();
@@ -136,7 +137,7 @@ h1 {
         display: flex;
         justify-content: center;
         margin-top: 40px;
-        .apparition-14 {
+        .order {
             padding-left: 50px;
             padding-right: 50px;    
         }
