@@ -195,9 +195,6 @@ footer ul .regular {
   margin: 20px 0 30px 0;
   font-weight: 300;
 }
-.exploration a {
-  color: #fff;
-}
 
 .process h2 {
   padding-left: 10px;
@@ -562,10 +559,10 @@ h1 {
   padding-right: 50px;
 }
 
-button {
+.button {
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  width: max-content;
   padding: 15px 20px;
+  text-align: center;
   font-size: 0.9rem;
   color: white;
   font-weight: 500;
@@ -575,8 +572,16 @@ button {
   cursor: pointer;
   transition: opacity, 1s ease-in-out;
 }
-button:hover {
+.button:hover {
   opacity: 0.7;
+}
+
+.exploration__button {
+  width: 300px;
+}
+
+.order-btn .width-btn {
+  width: 200px;
 }
 
 img {

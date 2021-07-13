@@ -1,7 +1,7 @@
-button {
+.button {
     background: linear-gradient(to bottom right, $secondary-color, $primary-color);
-    width: max-content;
     padding: 15px 20px;
+    text-align: center;
     font-size: 0.9rem;
     color: white;
     font-weight: 500;
@@ -12,6 +12,17 @@ button {
     transition: opacity, 1s ease-in-out;
     &:hover {
         opacity: .7;
+    }
+}
+
+.exploration__button {
+    width: 300px;
+}
+
+    
+.order-btn {
+    .width-btn {
+        width: 200px;
     }
 }
 
