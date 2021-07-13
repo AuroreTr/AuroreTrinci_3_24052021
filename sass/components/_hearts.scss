@@ -1,12 +1,13 @@
 
 .fa-heart {
-    // width: 10rem;
-    // height: 10rem;
     display: flex !important;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    position: absolute;
     height: 40px;
+    font-size: 1.7rem;
+    cursor: pointer;
+
     &:hover {
         font-weight: bold;
         background: -webkit-linear-gradient(white, $secondary-color, $primary-color);

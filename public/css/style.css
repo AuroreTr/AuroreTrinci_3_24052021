@@ -602,17 +602,13 @@ img {
 }
 
 .fa-heart {
-  position: absolute;
-  font-size: 1.7rem;
-  cursor: pointer;
-}
-
-.fa-heart {
   display: flex !important;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  position: absolute;
   height: 40px;
+  font-size: 1.7rem;
+  cursor: pointer;
 }
 .fa-heart:hover {
   font-weight: bold;
