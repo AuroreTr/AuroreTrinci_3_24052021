@@ -195,6 +195,9 @@ footer ul .regular {
   margin: 20px 0 30px 0;
   font-weight: 300;
 }
+.exploration a {
+  color: #fff;
+}
 
 .process h2 {
   padding-left: 10px;
